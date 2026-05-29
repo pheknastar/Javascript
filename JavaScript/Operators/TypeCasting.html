@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    //type conversion
+    <script>
+        //String()
+        let a = String(100);
+        let b = String(true);
+        let c = String(79.89);
+        let d = String(null);
+        console.log(typeof a,a);
+        console.log(typeof b,b);
+        console.log(typeof c,c);
+        console.log(typeof d,d);
+
+        //Number()
+        let e = Number("100");
+        let f = Number(true);
+        let g = Number(false);
+        let h = Number(null);
+        let i = Number(undefined);
+        let j = Number("true");
+        let k = Number("hello");
+        console.log(typeof e,e);
+        console.log(typeof f,f);
+        console.log(typeof g,g);
+        console.log(typeof h,h);
+        console.log(typeof i,i);
+        console.log(typeof j,j);
+        console.log(typeof k,k);
+        
+        let c1 = +"100";
+        let c2 = +true;
+        console.log(typeof c1,c1);
+        console.log(typeof c2,c2);
+
+        console.log(10 + +"8" +7);//25
+        console.log(10 + "8" + 7);//1087
+        
+        //falsy values
+        console.log(Boolean(0));
+        console.log(Boolean(false));
+        console.log(Boolean(null));
+        console.log(Boolean(undefined));
+        console.log(Boolean(""));
+        console.log(Boolean(NaN));
+
+        //truly value
+        console.log(Boolean("hello"));
+        console.log(Boolean("100"));
+        console.log(Boolean(" "));
+        console.log(Boolean(true));
+        console.log(Boolean(342));
+        
+        // &&
+        console.log(0 && "hello");
+        console.log("hi" && "hello");
+        console.log("hi" && NaN);
+        console.log(null && NaN);
+
+        // ||
+        console.log(null || NaN);
+        console.log("hello" || NaN);
+        console.log("false" || NaN);
+        console.log("false" || "100");
+        
+    // type coercion
+    let a1 = 100;
+    let b1 = "20";
+    let res = a1 + b1;
+    console.log(res, typeof res);
+
+    let c3 = true;
+    let d2 = 60;
+    let res1 = c3+d2;
+    console.log(res1, typeof res1);
+    
+    </script>
+</body>
+</html>

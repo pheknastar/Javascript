@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Arithematic Operator</h1>
+    <script>
+        // Addition
+        console.log("String" + "hello");
+        console.log("String" + 56);
+        console.log("String" + "56");
+        console.log(7 + 6);
+        console.log("String" + true);
+        console.log("String" + false);
+        console.log("String" + null);
+        console.log("String" + undefined);
+        console.log("100" + 10);
+        console.log("100" + typeof null);
+        console.log(100 + 50 + "200");
+        console.log(true + "200");
+        console.log(100 + false);
+        console.log(3 + null);
+        console.log(3 + undefined);//NaN
+        console.log("---------------------");
+
+        // Subtraction
+        console.log("hello" - "hi"); //NaN -> Not a Number
+        console.log("hello" - 100); //NaN -> Not a Number
+        console.log("hello" - true); //NaN -> Not a Number
+        console.log("hello" - false); //NaN -> Not a Number
+        console.log(true - false);
+        console.log("100" - "1");
+        console.log("100" - true);
+        console.log("100" - false);
+        console.log("100" - null);
+        console.log("100" - undefined); //NaN -> Not a Number
+        console.log("----------------------");
+
+        // Multiplicatrion
+        console.log("hello" * "hi");
+        console.log("100" * 3);
+        console.log(20 * false);
+        console.log("----------------------");
+
+        // Division -> Quotient
+        console.log(34 / 4);
+        console.log(20 / false); //Infinity
+        console.log(null / 9); //0
+        console.log(123 / undefined);//NaN
+        console.log("----------------------");
+
+        // Modulus -> Reminder
+        console.log(6 % 2);
+        console.log(0 % 2); //0
+        console.log(6 % 0); //NaN -> Not a Number
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = Number(prompt("Enter 1st no."));
+        let b = Number(prompt("Enter 2nd no."));
+        let operator = (prompt("Enter Operator."));
+        if (operator == "+") {
+            console.log(`Addition of ${a} + ${b} = ${a + b}`);
+        }
+        else if (operator  == "-") {
+            console.log(`Substraction of ${a} - ${b} = ${a - b}`);
+        }
+        else if (operator == "*") {
+            console.log(`Multiplication of ${a} * ${b} = ${a * b}`);
+        }
+        else if (operator == "/") {
+            console.log(`Division of ${a} / ${b} = ${a / b}`);
+        }
+        else {
+            console.log("Numbers are not valid");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = 10;
+        let b = 20;
+        const c = 30;
+
+        {
+            console.log(a);//10
+            console.log(b);//20
+            console.log(c);//30
+        }
+        // var belongs to global scope
+
+        {
+            var a = 40;
+            console.log(a + " within a block");//40
+        }
+        console.log(a + " outside of block");//40
+        
+        // let and const belongs to block scope
+        {
+            let a1 = 10;
+            console.log(a1 + " within a block");
+            
+        }
+        console.log(a1+ " outside the block");
+        
+        {
+            const c1 = 30;
+            console.log(c1 + " within a block");
+            
+        }
+        console.log(c1 + " outside the block");
+
+        let a2;
+        {
+            let a2 = 10;
+            console.log(a2);
+        }
+        console.log(a2);
+
+        var a3;
+        {
+           let a3 = 10;
+            console.log(a3); //10
+        }
+        console.log(a3);//10
+
+    </script>
+</body>
+
+</html>
