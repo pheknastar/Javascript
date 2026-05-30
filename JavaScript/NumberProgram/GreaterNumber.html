@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = 123987;
+        let gr = 0;
+        let rev = 0;
+        while (num > 0) {
+            rev = num % 10;
+            num = Math.trunc(num / 10);
+            if (rev > gr) {
+                gr = rev;
+            }
+        }
+        console.log(gr);
+
+    </script>
+</body>
+
+</html>

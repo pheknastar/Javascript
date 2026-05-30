@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let s = 2;
+        let e = 50;
+        // for (let index = s; index <= e; index++) {
+        //     let prime = true;
+        //     if (index == 1) {
+        //         prime = false
+        //     } else {
+        //         for (let j = 2; j <= Math.trunc(index / 2); j++) {
+        //             if (index % j == 0) {
+        //                 prime = false;
+        //                 break;
+        //             }
+        //         }
+        //     }
+        //     if (prime) {
+        //         console.log(index);
+        //     }
+        // }
+
+        //Prime no in Range and count of prime no.
+        let total = 0;
+        for (let i = s; i <= e; i++) {
+            let count = 0;
+            for (let j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    count++;
+                }
+            }
+            if(count == 2){
+            console.log(i);
+            total++;
+            }  
+        }
+        console.log("********************");
+        console.log(total);
+        
+    </script>
+</body>
+
+</html>
