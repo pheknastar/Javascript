@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Anonymous Function
+        // function(){
+        //     console.log("Anonymous Function"); // function statement requires a function name
+        // }
+        // ();
+
+        // Function Expression (when we create a function and assign it to a variable)
+        // First Class Function/Citizen (where function are treated as values)
+        let a = function () {
+            console.log("Anonymous Function");
+        }
+        a();
+        a();
+
+        let b = function mul(a, b) {
+            console.log(a * b);
+        }
+        b(2, 3);
+        mul(3, 5);  // Error (mul is not defined)
+    </script>
+</body>
+
+</html>

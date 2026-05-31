@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // IIFE Function (Immediately Invoke Function Expression)
+
+        (function () {
+            console.log("iife with normal function");
+        }());
+
+        (function () {
+            console.log("iife function");
+        })
+            ();
+
+        // (function(){
+        //     console.log("IIFE function");
+        // })
+        // let a;
+        // ();
+
+        (() => {
+            console.log("IIFE with Arrow Function");
+        })
+            ();
+
+        ((a, b) => {
+            console.log(a + b);
+        })
+            (2, 3);
+    </script>
+</body>
+
+</html>

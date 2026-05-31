@@ -20,14 +20,45 @@
             console.log(c + d);
         }
         add1(); // NaN
-        add1(5,4);
+        add1(5, 4);
 
         // return Keyword
         function add(a, b) {
-            return(a + b);
+            return (a + b);
         }
-        console.log(add(5,6));
-        
+        console.log(add(5, 6));
+
+        function main1() {
+            console.log("main1 starts");
+            let a = m1(); // Undefined (because we are not returning any thing in m1 function)
+            console.log(a); // Undefined
+            console.log("main1 ends");
+        }
+
+        function m1() {
+            console.log("m1 starts");
+            console.log("m1 ends");
+        }
+
+        main1();
+
+        function main2() {
+            console.log("main2 starts");
+            let a = m2(); // storing returned value of a m2 function
+            console.log(a); // 20
+            console.log("main2 ends");
+        }
+
+        function m2() {
+            console.log("m2 starts");
+            console.log("m2 ends");
+            let a = 10;
+            let b = 10;
+            return a + b;
+        }
+
+        main2();
+
     </script>
 </body>
 
