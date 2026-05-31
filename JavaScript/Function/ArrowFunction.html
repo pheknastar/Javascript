@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Arrow Function
+        let b = () => {
+            console.log("Arrow Function");
+        }
+        b();
+
+        // Explict Return
+        let res = (a, c) => {
+            return a + c;
+        }
+        console.log(res(3, 4));
+
+        // Implicit Return
+        let res1 = (d, e) => d + e
+        console.log(res1(2, 6));
+
+        let name = (n) => {
+            return "my name is " + n;
+        }
+        console.log(name("Pushkar"));
+
+        let name1 = n => "my name is " + n;
+        console.log(name1("Sonu"));
+
+    </script>
+</body>
+
+</html>

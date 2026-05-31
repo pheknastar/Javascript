@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Pure Function
+        function add(a,b){
+            return (a+b);
+        }
+        console.log(add(1,2));
+        
+        // Im-Pure Function
+        let num = Number(prompt("Enter the no."))
+        function add1(c,d){
+            return (c+d+num);
+        }
+        console.log(add1(1,2));
+
+        // Default Function/Parameter
+        function add2(e,f){
+            return (e+f);
+        }
+        console.log(add2(6));  // NaN
+
+        function add(g,h=1){
+            return (g+h);
+        }
+        console.log(add(6)); //7
+
+        function add(i=6,j=2){
+            return (i+j);
+        }
+        console.log(add(6,5));// 1st priority //11
+        console.log(add()); //8
+
+        // Argument Object
+        function a1() {
+            let s = arguments[0];
+            let s1 = arguments[1];
+            return s+s1;
+        }
+        console.log(a1(2,5,6,4,3,8,9));
+        console.log(a1(1,5,6));
+
+        let arr = ()=>{
+            return arguments[0];
+        }
+        console.log(arr(2,5,6,4,3,8,9)); // Arrow function don't have argument object
+    </script>
+</body>
+</html>
