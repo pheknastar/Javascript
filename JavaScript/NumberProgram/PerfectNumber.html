@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = 28;
+        let sum = 0;
+        for (let index = 1; index < num; index++) {
+            if (num % index == 0) {
+                sum += index;
+            }
+        }
+        if (sum == num) {
+            console.log(`${num} is a perfect no`);
+        } else {
+            console.log(`${num} is not a perfect no`);
+        }
+    </script>
+</body>
+
+</html>

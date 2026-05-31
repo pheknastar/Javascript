@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let s = 2;
+        let e = 50;
+        let c = 0;
+        for (let num = s; num <= e; num++) {
+            let prime = true;
+            if (num == 1) {
+                prime = false;
+            } else {
+                for (let j = 2; j <= Math.trunc(num / 2); j++) {
+                    if (num % j == 0) {
+                        prime = false;
+                        break;
+                    }
+                }
+            }
+            if (prime) {
+                c++;
+            }
+        }
+        console.log(c);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num = Number(prompt("Enter the number"));
+        let temp = num;
+        let rev = 0;
+        while (num > 0) {
+            rev = rev * 10 + num % 10;
+            num = Math.trunc(num / 10);
+        }
+        if (rev == temp) {
+            console.log(`${temp} is Palindrome`);
+        } else {
+            console.log(`${temp} is not a Palindrome`);
+        }
+    </script>
+</body>
+
+</html>
